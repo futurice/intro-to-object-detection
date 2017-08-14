@@ -4,6 +4,7 @@ Introduction to Object Detection
 > This is a starting template to learn how to build an object detector. We want to detect images of a specific object from digital photographs. In order to achieve this goal, we shall employ the help from [opencv3](http://opencv.org/), a computer vision library, for image manipulation, and [dlib](http://dlib.net/), a machine learning library.
 
 ### Important notes
+- OSX users should install x11.
 - The recommended programming language is Python. However, it is possible to adapt to C++ easily.
 - It is highly recommended to use `Anaconda` over `pip`, since packages from pip can have missing components.
 - Use python 2.7 or 3.5, because opencv3 is not prepackaged for python 3.6 on OSX.
