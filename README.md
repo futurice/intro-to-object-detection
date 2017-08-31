@@ -3,29 +3,27 @@ Introduction to Object Detection
 
 > This is a starting template to learn how to build an object detector. We want to detect images of a specific object from digital photographs. In order to achieve this goal, we shall employ the help from [opencv3](http://opencv.org/), a computer vision library, for image manipulation, and [dlib](http://dlib.net/), a machine learning library.
 
-### Important notes
-- OSX users should install x11.
+### Notes
+- Slides at [link](https://docs.google.com/presentation/d/1Dbulz6qFBosbt_qwnS3Bx6FQr0FEz04FwlSCOcTJ9jI/edit#slide=id.g251e44bc4d_0_0)
 - The recommended programming language is Python. However, it is possible to adapt to C++ easily.
-- It is highly recommended to use `Anaconda` over `pip`, since packages from pip can have missing components.
-- Use python 2.7 or 3.5, because opencv3 is not prepackaged for python 3.6 on OSX.
-- Download Anaconda from [here](https://www.continuum.io/downloads).
-- Install Anaconda
+- It is recommended to use a Python virtual environment. Instal `virtualenv` with `pip`.
+- The dlib version from pip does not include all dlib features. It is recommended to build dlib from source.
 
 ### Setup environment
-1. Create and activate python 3.5
+1. Create virtual python environment (optional)
 ```bash
-conda create --name object-detection python=3.5
-source activate object-detection
+virtualenv .env -p python3.6
+source .env/bin/activate
 ```
-2. Install `opencv3` and `dlib`
+2. Install dependencies (`opencv3` and `dlib`)
 ```bash
-conda install --name object-detection -c menpo opencv3 dlib
+pip install -r requirements.txt
 ```
 
 3. Cleanup (optional, in case you want to recreate your python environment)
 ```bash
-source deactivate
-conda remove --name object-detection --all
+deactivate
+rm -rf .env
 ```
 
 ### Challenge instruction

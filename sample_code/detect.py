@@ -18,7 +18,7 @@ dets = detector(img)
 for det in dets:
     p1 = (det.left(), det.top())
     p2 = (det.right(), det.bottom())
-    color = (0, 0, 250) # Red
+    color = (0, 0, 255) # Red
     cv2.rectangle(camera_frame, p1, p2, color)
     cv2.imshow('Eyeglasses', camera_frame)
     cv2.waitKey(0)
@@ -55,7 +55,7 @@ while True:
             for det in dets:
                 p1 = (det.left(), det.top())
                 p2 = (det.right(), det.bottom())
-                color = (0, 0, 250) # Red
+                color = (0, 0, 255) # Red
                 cv2.rectangle(camera_frame, p1, p2, color)
         cv2.imshow('Eyeglasses', camera_frame)
         key = cv2.waitKey(1000 // fps)

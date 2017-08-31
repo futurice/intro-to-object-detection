@@ -1,0 +1,4 @@
+dlib
+opencv-python
+jupyter
+matplotlib

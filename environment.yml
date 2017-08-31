@@ -1,9 +1,0 @@
-name: object-detection
-channels:
-  - menpo
-dependencies:
-  - python=3.5
-  - dlib
-  - opencv3
-  - jupyter
-  - matplotlib
