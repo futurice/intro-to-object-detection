@@ -10,17 +10,26 @@ Introduction to Object Detection
 - The dlib version from pip does not include all dlib features. It is recommended to build dlib from source.
 
 ### Setup environment
-1. Create virtual python environment (optional)
+1. Install `boost-python`
+```bash
+# OSX
+brew install boost-python --with-python3
+
+# Ubuntu
+sudo apt-get install libboost-all-dev
+```
+
+2. Create virtual python environment (optional)
 ```bash
 virtualenv .env -p python3.6
 source .env/bin/activate
 ```
-2. Install dependencies (`opencv3` and `dlib`)
+3. Install dependencies (`opencv3` and `dlib`)
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Cleanup (optional, in case you want to recreate your python environment)
+4. Cleanup (optional, in case you want to recreate your python environment)
 ```bash
 deactivate
 rm -rf .env
